@@ -43,20 +43,38 @@
     width: 300px;
     text-align: center;
 }
-.content .text-right form a{
-    text-decoration: none;
-}
-.content .text-right form input{
+.text-right form input{
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 2px solid var(--second-color);
     border-radius: 5px;
     outline-color: var(--first-color);
 }
-.content .text-right form input:nth-child(3){
-    background-color: var(--first-color);
+.text-right form input:nth-child(3){
+    background: var(--first-color);
     text-align: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.text-right form input:nth-child(4){
+    color: var(--first-color);
+    background: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.text-right form input:nth-last-child(1){
+    background-color: var(--thirth-color);
+    margin-top: 10px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: fit-content;
 }
 
 
