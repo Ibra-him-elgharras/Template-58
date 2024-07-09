@@ -1,7 +1,7 @@
 :root{
-    first-color: #000;
-    second-color: #070;
-    thirth-color: #047;
+    --first-color: #0078d7;
+    --second-color: #eeeeee;
+    --thirth-color: #279b37;
 }
 *{
     padding: 0;
@@ -11,40 +11,52 @@
 }
 .container{
     height: 100vh;
-    background-color: #808080;
+    background-color: var(--second-color);
     display: grid;
     place-items: center;
 }
 .container .content{
     max-width: 1200px;
-    width: 900px;
+    width: 700px;
     display: flex;
     justify-content: space-between;
 }
 .content .text-left{
-    background-color: red;
+    padding-top: 50px;
 }
 .text-left .logo{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
-    color: aqua;
+    color: var(--first-color);
 }
 .text-left p{
-    font-size: 16px;
+    font-size: 18px;
     color: #000;
     font-weight: bold;
 }
 .content .text-right{
-    background-color: blue;
+    background-color: #fff;
     padding: 12px;
     border-radius: 5px;
 }
 .content .text-right form{
-    background-color: yellow;
-    width: 350px;
+    width: 300px;
+    text-align: center;
+}
+.content .text-right form a{
+    text-decoration: none;
 }
 .content .text-right form input{
     width: 100%;
-
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--second-color);
+    border-radius: 5px;
+    outline-color: var(--first-color);
 }
+.content .text-right form input:nth-child(3){
+    background-color: var(--first-color);
+    text-align: center;
+}
+
 
